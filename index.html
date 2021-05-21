@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Swiper.js Tutorial</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+</head>
+
+<body>
+
+
+
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="slidetext">
+                        <h3>Ishan Kumar</h3>
+                    </div>
+                    <div class="slideContent">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iure accusamus mollitia
+                            quaerat quod corporis asperiores accusantium culpa laboriosam repellendus pariatur placeat
+                            alias, quisquam recusandae, iste blanditiis reprehenderit excepturi commodi.</p>
+                        <a href="https://www.instagram.com/ishankmr27/" target="_blank"  title="Open Instagram Profile"><button>Click Here</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="slidetext">
+                        <h3>Shefali Verma</h3>
+                    </div>
+                    <div class="slideContent">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iure accusamus mollitia
+                            quaerat quod corporis asperiores accusantium culpa laboriosam repellendus pariatur placeat
+                            alias, quisquam recusandae, iste blanditiis reprehenderit excepturi commodi.</p>
+                        <a href="https://www.instagram.com/shefali_verma__/" target="_blank"  title="Open Instagram Profile"><button>Click Here</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="slidetext">
+                        <h3>Urvi Singh</h3>
+                    </div>
+                    <div class="slideContent">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iure accusamus mollitia
+                            quaerat quod corporis asperiores accusantium culpa laboriosam repellendus pariatur placeat
+                            alias, quisquam recusandae, iste blanditiis reprehenderit excepturi commodi.</p>
+                        <a href="https://www.instagram.com/sinurvi/" target="_blank"  title="Open Instagram Profile"><button>Click Here</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="slidetext">
+                        <h3>ShahRukh Khan</h3>
+                    </div>
+                    <div class="slideContent">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iure accusamus mollitia
+                            quaerat quod corporis asperiores accusantium culpa laboriosam repellendus pariatur placeat
+                            alias, quisquam recusandae, iste blanditiis reprehenderit excepturi commodi.</p>
+                        <a href="https://www.instagram.com/iamsrk/" target="_blank" title="Open Instagram Profile"><button>Click Here</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+     <script>
+         var a;
+         
+       var swiper = new Swiper(".mySwiper", {
+         effect: "coverflow",
+         grabCursor: true,
+         centeredSlides: true,
+         slidesPerView: "auto",
+         coverflowEffect: {
+           rotate: 30,
+           stretch: 1,
+           depth: 300,
+           modifier: 1,
+           slideShadows: true,
+         },
+         pagination: {
+           el: ".swiper-pagination",
+         },
+       });
+
+       
+     </script>
+
+
+
+</body>
+
+</html>
